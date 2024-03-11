@@ -30,6 +30,19 @@ body {
     background-color: #fff;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -202,19 +215,6 @@ body {
 /* =========== /Hero Section styles =========== */
 
 /* =========== Benefits Section styles =========== */
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .benefits-list {
     display: flex;
     gap: 24px;
@@ -469,6 +469,7 @@ transform: translateY(0%);
 .footer-form {
     display: flex;
     align-items: end;
+    gap: 24px;
 }
 
 .footer-form-input-wrapper {
